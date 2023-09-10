@@ -15,8 +15,10 @@ if (x != y && x < y)
 putchar(x + 48);
 putchar(y + 48);
 if (x < 8 || y < 9)
+{
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
