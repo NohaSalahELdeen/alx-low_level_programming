@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*
-* main entery point
-* Return: 0 Seccess
+* main -Enter point
+* Return: always 0 Seccess
 */
 int main(void)
 {
