@@ -15,7 +15,7 @@ if (x != y && x < y)
 putchar(x + 48);
 putchar(x + 48);
 putchar(' ');
-putchar(y + 48);
+putchar(x + 48);
 putchar(y + 48);
 if (x < 8 || y < 9)
 {
@@ -26,5 +26,5 @@ putchar(' ');
 }
 }
 putchar('\n');
-return (0);  
+return (0);
 }
