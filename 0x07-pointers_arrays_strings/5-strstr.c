@@ -12,7 +12,7 @@ char *p;
 for (i = 0; haystack[i] != '\0'; i++)
 {
 	for (j = 0; needle[j] != '\0'; j++)
-	while (needle[j] == haystack[i - j -1])
+	while (needle[j] == haystack[i - j - 1])
 	{
 	if (haystack[i] != '\0')
 	{
