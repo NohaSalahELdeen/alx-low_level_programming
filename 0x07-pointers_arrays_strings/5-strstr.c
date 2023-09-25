@@ -12,9 +12,9 @@ char *p;
 for (i = 0; haystack[i] != '\0'; i++)
 {
 	for (j = 0; needle[j] != '\0'; j++)
-	if (needle[j] == haystack[i - 5])
+	if (needle[j] != haystack[i])
 	{
-	p = &haystack[i];
+	p = &needle[j];
 	return (p);
 	}
 }
