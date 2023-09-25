@@ -12,10 +12,13 @@ char *p;
 for (i = 0; haystack[i] != '\0'; i++)
 {
 	for (j = 0; needle[j] != '\0'; j++)
-	if (haystack[j] == needle[i])
+	while (needle[j] == haystack[i - j -1])
 	{
-	p = &haystack[j - i];
+	if (haystack[i] != '\0')
+	{
+	p = &haystack[i];
 	return (p);
+	}
 	}
 }
 return (0);
