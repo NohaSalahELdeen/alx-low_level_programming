@@ -31,6 +31,10 @@ if (cent >= 1)
 	cent -= 1;
 coins++;
 }
+if (cent > 0)
+{
+printf("%d\n", 0);
+}
 printf("%d\n", coins);
 return (0);
 }
