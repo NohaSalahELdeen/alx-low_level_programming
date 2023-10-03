@@ -22,5 +22,4 @@ if (str == 0 || s == 0)
 return (0);
 }
 return (s);
-free(s);
 }
