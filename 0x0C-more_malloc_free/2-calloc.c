@@ -10,6 +10,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	unsigned int i;
 	char *arr;
 
 	if (nmemb == 0 || size == 0)
@@ -19,8 +20,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (arr == NULL)
 		return (NULL);
 
-	if (arr)
-		bzero(arr, nmemb * size);
+	for (i = 0; size > 0; i++)
+{
+	size--;
+	arr[i] = 0;
+}
 
 	return (arr);
 }
