@@ -27,7 +27,7 @@ char *_strcpy(char *de, char *su)
 	int i, l;
 
 	l = _strlen(su);
-	for (i = 0; i <= l; i++)
+	for (i = 0; i < l; i++)
 		de[i] = su[i];
 	de[i] = '\0';
 	return (de);
