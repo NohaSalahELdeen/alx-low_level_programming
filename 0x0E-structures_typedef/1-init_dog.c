@@ -9,10 +9,8 @@
   */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog *space;
-
-	space = malloc(sizeof(struct dog));
-	if (space == NULL)
+	d = malloc(sizeof(struct dog));
+	if (d == NULL)
 		exit(0);
 
 	d->name = name;
