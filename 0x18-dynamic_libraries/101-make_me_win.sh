@@ -1,4 +1,3 @@
 #!/bin/bash
-gcc -c -fPIC win.c
-gcc -shared -o libwin.so win.o
+gcc -shared -o libwin.so -fPIC win.c
 LD_PRELOAD=/$PWD/libwin.so ./gm 9 8 10 24 75 9
